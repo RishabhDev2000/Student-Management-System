@@ -1,0 +1,16 @@
+.option{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.card{
+    padding: 1.5rem;
+}
+.card .card-body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

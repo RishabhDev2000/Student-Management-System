@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Mangement System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script>
+          fetch('/dashboard/:dbemail', {
+          method: 'GET',
+          headers: {
+              'Accept': 'application/json',
+          },
+        })
+        .then(response => response.json())
+        .then(response => console.log(JSON.stringify(response)))
+  </script>
+  <body style="background-color:dimgray;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/home">Student Mangement System</a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="container-fluid bg-dark w-100 text-light p-2">
+        <form class="row g-3 p-3" method="get" action="/dashboard/:dbemail">
+        <div class="container-fluid bg-dark text-light py-7">
+            <header class="text-center">
+            <h1 class="display-7">MY PROFILE</h1>
+            </header>
+        </div>
+        <div class="row mb-3">
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Roll No:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label1</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Name:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label2</label>
+    
+        </div>
+        <div class="row mb-3">
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Standard:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm"></label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Father Name:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label4</label>
+        </div>
+        <div class="row mb-3">
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Mother Name:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label5</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Date Of Birth:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label6</label>
+        </div>
+        <div class="row mb-3">
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Country:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label7</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">State:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label8</label>
+        </div>
+        <div class="row mb-3">
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Pincode:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label9</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Student Email Id:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label10</label>
+        </div>
+        <div class="row mb-3">
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Gender:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label11</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Parent No:</label>
+            <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">label12</label>  
+        </div>
+        <div class="col-12">
+            <header class="text-center">
+             <a type="submit" class="btn btn-secondary" href="/dashboard/:dbemail">OK</a>
+           </header>
+        </div>
+        </form>
+      </section>
+      <div id="foot" class="footer text-center p-4 mt-5 bg-white">
+        <div class="text-center">
+          @ 2023 copyright:
+          <span class="font-weight-bold makeBold">hcltech.com</span>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

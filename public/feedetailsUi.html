@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Student Mangement System</a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section class="container-fluid bg-dark my-3 w-50 text-light p-2 rounded"  style="background-color:dimgray;">
+    <form class="row g-3 p-3" method="post" action="">
+    <div class="container-fluid bg-dark text-light py-7">
+        <header class="text-center">
+        <h1 class="display-7">FEE DETAILS</h1>
+        </header>
+    </div>
+    <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Receipt No:</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control form-control-sm" id="receiptno"- name="receiptno">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Roll No:</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control form-control-sm" id="rollno" name="rollno">
+    </div>
+    </div>
+    <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Admission No:</label>
+        <div class="col-sm-9">
+        <input type="number" class="form-control form-control-sm" id="admissionno" name="admissionno">
+    </div>
+    </div>
+    <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Student Name:</label>
+        <div class="col-sm-9">
+        <input type="text" class="form-control form-control-sm" id="studentname" name="studentname">
+    </div>
+    </div>
+    <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Admission Year:</label>
+        <div class="col-sm-9">
+        <input type="number" class="form-control form-control-sm" id="year" name="year">
+    </div>
+    </div>
+    <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Deposit Date:</label>
+        <div class="col-sm-9">
+        <input type="date" class="form-control form-control-sm" id="depositedate" name="depositedate">
+    </div>
+    </div>
+    <div class="row mb-3">
+        <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Fee Amount:</label>
+        <div class="col-sm-9">
+        <input type="number" class="form-control form-control-sm" id="feeamount" name="feeamount">
+    </div>
+    </div>
+    <div class="row-md-6">
+      <label for="inputGender" class="form-label">Fee Status:</label>
+        <div class="form-check form-check-inline ms-3">
+            <input class="form-check-input" type="radio" id="submitted" value="1" name="feestatus">
+            <label class="form-check-label" for="inlineCheckbox1">Submitted</label>
+          </div>
+          <div class="form-check form-check-inline ms-3">
+            <input class="form-check-input" type="radio" id="pending" value="2" name="feestatus">
+            <label class="form-check-label" for="inlineCheckbox2">Pending</label>
+          </div>
+    </div>
+    <div class="col-md-6">
+        <a href="/admin" class="btn btn-primary">Back</a>
+     </div>
+      <div class="col-md-6">
+        <input type="submit" class="btn btn-primary" href="/admin/feedetails" name="Submit" >
+      </div>
+    </form>
+  </section>
+  </body>
+</html>

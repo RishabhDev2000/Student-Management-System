@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Student Mangement System</a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section class="container-fluid my-5 bg-dark w-50 text-light px-2 py-2 rounded">
+    <form class="row g-3 p-3" method="post">
+    <div class="container-fluid bg-dark text-light py-7">
+        <header class="text-center my-3">
+        <h1 class="display-7">LOGIN TO YOUR ACCOUNT</h1>
+        </header>
+    </div>
+      <div class="row mb-3 justify-content-center">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Enter Email ID:</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control form-control-sm" id="colFormLabelSm" name="email">
+          </div>
+          </div>
+      </div>
+      <div class="row mb-3">
+          <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Enter Password:</label>
+          <div class="col-sm-9">
+            <input type="password" class="form-control form-control-sm" id="colFormLabelSm" name="password">
+          </div>
+        </div>
+      <div class="col-md-5">
+         <input type="submit" class="btn btn-primary" href="/:dbemail" value="Login">
+      </div>
+       <div class="col-md-6">
+         <a type="submit" class="btn btn-primary" href="/resetpassword">Forget Password</a>
+       </div>
+    <div class="row mb-3">
+      <label for="colFormLabelSm" class="col-sm-7 col-form-label col-form-label-sm">New Student Kindly Register Yourself:</label>
+        <div class="col-sm-8">
+          <!-- <button type="submit" class="btn btn-primary" id="colFormLabelSm">Sign Up</button> -->
+          <a href="/studentRegister" class="btn btn-primary">Sign Up</a>
+        </div>
+    </div>
+    </form>
+  </section>
+  </body>
+</html>
